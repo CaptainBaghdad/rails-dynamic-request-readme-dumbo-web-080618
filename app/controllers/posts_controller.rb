@@ -1,6 +1,6 @@
 class PostsController < ApplicationController 
   
-   get '/posts/:id' do 
+   def show 
      @post = Post.find(params[:id])
      
    end 
